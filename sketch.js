@@ -1,6 +1,6 @@
 var  box ; 
 function setup() {
-  createCanvas(400,400);
+  createCanvas(1000,1000);
   box = createSprite(200,200,100,100)
 }
 
@@ -19,6 +19,8 @@ function draw()
   if (keyIsDown(DOWN_ARROW)){
     box.position.y=box.position.y+5
   }
+
+  box.shapeColor="blue"
 drawSprites()
 }
 
